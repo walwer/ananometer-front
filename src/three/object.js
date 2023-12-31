@@ -6,6 +6,10 @@ import {
 } from "three";
 import {OBJLoader} from 'three/addons/loaders/OBJLoader.js';
 
+function lerp(start, end, amt) {
+    return (1 - amt) * start + amt * end
+}
+
 export default function createObject(url, rotate) {
 
     return new Promise((resolve, reject) => {
@@ -22,9 +26,11 @@ export default function createObject(url, rotate) {
 
             function (object) {
                 let frame = 0;
+                let speed = 0;
                 object.tick = (delta) => {
                     if (rotate) {
-                        frame += 0.02 * window.animationSpeed;
+                        speed = lerp(speed, window.animationSpeed, 0.04);
+                        frame += 0.02 * speed;
                     }
 
                     object.rotation.set(180, -frame, 0)

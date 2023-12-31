@@ -48,14 +48,9 @@ export default {
     onMessage(e) {
       console.log('message', e);
       this.speed = e.data
-
       let speed = parseFloat(e.data);
-
-      this.setAnimationSpeed(this.lerp(this.animationSpeed, speed * 7, 0.2))
+      this.setAnimationSpeed(speed * 8)
     },
-    lerp(start, end, amt) {
-      return (1 - amt) * start + amt * end
-    }
   },
   created() {
     window.animationSpeed = this.animationSpeed;
