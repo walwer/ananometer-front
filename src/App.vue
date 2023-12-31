@@ -9,7 +9,7 @@
                     Wind speed
                 </span>
         <div class="icon">
-          <img src="@/assets/wind.png">
+          <img src="@/assets/wind.svg">
         </div>
 
       </div>
