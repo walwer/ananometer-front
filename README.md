@@ -1,29 +1,23 @@
-# iot_ananometer
+# Ananometer Frontend 
 
-This template should help get you started developing with Vue 3 in Vite.
+VUE 3 Front application for handling websocket stream from ESP32 based DIY Hall Effect ananometer.
 
-## Recommended IDE Setup
+## Demo
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![ananometer_working_walwer](https://github.com/walwer/ananometer-front/assets/39830198/5de85a3e-8148-41bf-9df8-04b665dd0f1d)
 
-## Customize configuration
+## Used hardware
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+* ESP32
+* 3144 Hall Effect sensor
+* RC Bearing
+* 3D Printers
 
-## Project Setup
+## Used software
+  
+* Inventor
+* WebStorm
+* Arduino IDE
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+### Reference on Three JS code
+I found a good article on how to setup threejs along with Vue.js application on Medium -> https://medium.com/nicasource/building-an-interactive-web-portfolio-with-vue-three-js-part-three-implementing-three-js-452cb375ef80
